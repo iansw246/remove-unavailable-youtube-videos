@@ -43,8 +43,7 @@ async function loadGapiLibrary() {
  */
 function initTokenClient(
   onTokenResponse:
-    | ((tokenResponse: google.accounts.oauth2.TokenResponse) => void)
-    | null,
+    ((tokenResponse: google.accounts.oauth2.TokenResponse) => void) | null,
   scope: google.accounts.oauth2.TokenClientConfig["scope"] = DEFAULT_YOUTUBE_SCOPES,
   prompt: google.accounts.oauth2.TokenClientConfig["prompt"] = "",
 ): TokenClient {
@@ -68,8 +67,7 @@ export default function useGapiTokenClient(
   onGapiTokenClientLoaded: (tokenClient: TokenClient) => void,
   onGapiTokenClientLoadFail: (error: unknown) => void,
   onTokenResponse:
-    | ((tokenResponse: google.accounts.oauth2.TokenResponse) => void)
-    | null,
+    ((tokenResponse: google.accounts.oauth2.TokenResponse) => void) | null,
 ) {
   const [isGapiLoaded, setIsGapiLoaded] = useState<boolean>(false);
 

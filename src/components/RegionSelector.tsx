@@ -4,16 +4,15 @@ import { defaultRegion } from "../data/regionOptions";
 import { matchSorter } from "match-sorter";
 import type { MatchSorterOptions } from "match-sorter";
 
-export interface Props
-  extends Omit<
-    AutocompleteProps<Region, false, false, false>,
-    | "value"
-    | "onChange"
-    | "options"
-    | "getOptionLabel"
-    | "autoHighlight"
-    | "renderInput"
-  > {
+export interface Props extends Omit<
+  AutocompleteProps<Region, false, false, false>,
+  | "value"
+  | "onChange"
+  | "options"
+  | "getOptionLabel"
+  | "autoHighlight"
+  | "renderInput"
+> {
   value: Region;
   onChange: (
     event: React.SyntheticEvent<Element, Event>,

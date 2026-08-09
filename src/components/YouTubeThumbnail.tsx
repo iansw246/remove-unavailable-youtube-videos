@@ -8,8 +8,9 @@ const YouTubeThumbnailComponent = styled("img")({
   objectFit: "cover",
 });
 
-export interface Props
-  extends React.ComponentPropsWithoutRef<typeof YouTubeThumbnailComponent> {
+export interface Props extends React.ComponentPropsWithoutRef<
+  typeof YouTubeThumbnailComponent
+> {
   thumbnailURL: string;
   alt: string;
 }
