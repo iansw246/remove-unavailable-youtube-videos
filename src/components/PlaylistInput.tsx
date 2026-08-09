@@ -113,6 +113,10 @@ export default function PlaylistInput({ onChange }: Props) {
         label="Playlist ID/link"
         onChange={onPlaylistInputChange}
         error={!isPlaylistInputValid}
+        sx={{
+          width: "100%",
+          maxWidth: "500px"
+        }}
         helperText={
           isPlaylistInputValid ? undefined : "Invalid playlist ID/link"
         }
