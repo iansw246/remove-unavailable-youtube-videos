@@ -1,4 +1,6 @@
-const response = {
+import type { PlaylistListResponse } from "../utils/requestHelpers";
+
+const response: PlaylistListResponse = {
   kind: "youtube#playlistListResponse",
   etag: "RZ-Hu7jTlWOB-OOP8mDZ2f9OpLo",
   pageInfo: {

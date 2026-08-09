@@ -1,6 +1,8 @@
 // Response from https://content-youtube.googleapis.com/youtube/v3/playlistItems?playlistId=OLAK5uy_lVHKpWYVeLJEP2eqMjfCk0uYE54qRXo10&maxResults=50&part=contentDetails%2Cid%2Csnippet%2Cstatus&key=AIzaSyAa8yy0GdcGPHdtD083HiGGx_S0vMPScDM
 
-const response = {
+import type { PlaylistItemListResponse } from "../utils/requestHelpers";
+
+const response: PlaylistItemListResponse = {
   kind: "youtube#playlistItemListResponse",
   etag: "OlXS_VhHXCUF7dva8dYTY4HwCao",
   items: [

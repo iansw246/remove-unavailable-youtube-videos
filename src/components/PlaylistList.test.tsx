@@ -2,7 +2,7 @@ import PlaylistList from "./PlaylistList";
 import playlistListResponse from "../testData/playlistsListResponse";
 import { render, screen } from "@testing-library/react";
 
-const playlists = playlistListResponse.items;
+const playlists = playlistListResponse.items!;
 
 test("PlaylistList displays playlists", () => {
   render(
@@ -12,7 +12,7 @@ test("PlaylistList displays playlists", () => {
     />,
   );
   for (const playlist of playlists) {
-    expect(screen.getByText(playlist.snippet.title)).toBeInTheDocument();
+    expect(screen.getByText(playlist.snippet!.title!)).toBeInTheDocument();
   }
 });
 
